@@ -15,8 +15,8 @@ public class TodoService {
 	
 	static {
 		todos.add(new Todo(1,"Akshay","Knight Pearl",LocalDate.now().plusYears(1),false));
-		todos.add(new Todo(2,"Rajul","Knight Pearl",LocalDate.now().plusYears(1),true));
-		todos.add(new Todo(3,"Naresh","Knight Pearl",LocalDate.now().plusYears(1),false));
+		todos.add(new Todo(2,"Rajul","Royal Challneger",LocalDate.now().plusYears(2),true));
+		todos.add(new Todo(3,"Naresh","Pink Panthers",LocalDate.now().plusYears(3),false));
 	}
 	
 	public List<Todo> getListOfTodosByUsername(String username){

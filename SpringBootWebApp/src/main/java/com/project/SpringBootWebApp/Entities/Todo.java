@@ -33,10 +33,10 @@ public class Todo {
 	public void setTargetDate(LocalDate targetDate) {
 		this.targetDate = targetDate;
 	}
-	public boolean isDone() {
+	public boolean getIsDone() {
 		return isDone;
 	}
-	public void setDone(boolean isDone) {
+	public void setIsDone(boolean isDone) {
 		this.isDone = isDone;
 	}
 	public Todo(int id, String username, String description, LocalDate targetDate, boolean isDone) {
