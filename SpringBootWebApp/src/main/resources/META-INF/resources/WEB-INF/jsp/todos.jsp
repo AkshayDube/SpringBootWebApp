@@ -31,6 +31,7 @@
 				</c:forEach>
 			</tbody>
 		</table>
+		<a class="btn btn-success" href="/add-todo">Add-Todo</a>
 	</div>
 </body>
 </html>
