@@ -1,5 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <html>
 <head>
 <title>Welcome</title>
@@ -10,11 +10,16 @@
 	<div class="container">
 		<h1 class="">Add New Todo Task</h1>
 		<hr>
-		<form action="/todos" method="post">
+		<form:form modelAttribute="todo" method="post" action="">
 			<span class="text-danger">Description:</span>
-			<input type="text" name="description"> <input type="submit"
-				class="btn btn-success">
-		</form>
+			<form:input type="hidden" path="id" /> 
+			<form:input type="text" path="description" /> 
+			<form:input type="hidden" path="isDone" />
+			<form:input type="hidden" path="targetDate" /> 
+			
+			<input type="submit"
+				class="btn btn-success" />
+		</form:form>
 	</div>
 </body>
 </html>
